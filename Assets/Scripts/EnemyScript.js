@@ -6,7 +6,7 @@ function DeductPoints(hitpoints: int) {
 }
 
 function Update() {
-    if (enemyhealth < 0) {
+    if (enemyhealth <= 0) {
         Destroy(gameObject);
     }
 }
