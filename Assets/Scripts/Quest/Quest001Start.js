@@ -8,8 +8,11 @@ var QuestBox: GameObject;
 var QuestText: GameObject;
 var QuestName: String;
 
+var QuestItemToShow: GameObject;
+
 function OnMouseDown() {
     if (TextBoxOnCheck == 0) {
+        QuestItemToShow.SetActive(true);
         TextBoxOnCheck = 1;
         MessageBox.SetActive(true);
         TextBox.GetComponent.<Text>().text = TextMessage;
